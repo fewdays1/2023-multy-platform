@@ -1,0 +1,33 @@
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+    
+    .icon-row__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: color 0.3s ease-in-out;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.icon-row__icon i {
+    font-size: 35px;
+}
+
+.icon-row__icon span {
+    margin-top: 14px;
+}
+
+.icon-row__icon:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.icon-row__icon:nth-child(4) ~ .icon-row__icon {
+    margin-top: 50px; /* 5번째 아이콘부터 윗마진 주기*/
+}
